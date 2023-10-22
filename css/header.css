@@ -59,10 +59,10 @@ html, body {
 .header__title {
     display: block;
     max-width: 100%;
-    font-family: 'Joti One', serif;
+    font-family: 'Titan One', serif;
     color: white;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: normal;
     z-index: 2;
 }
 
@@ -191,7 +191,7 @@ html, body {
         height: 100%;
         background-color: #0e112e;
         padding: 70px 0 10px 10px;
-        overflow: auto; /*Чтобы появился скролл у меню, если оно длиннее экрана*/
+        overflow: auto;
         transition: all 0.3s ease;
     }
 
