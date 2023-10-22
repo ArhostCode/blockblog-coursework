@@ -36,6 +36,6 @@ body {
 
 .header {
     background: linear-gradient(transparent 80px, var(--background-color)),
-    url("imgound.jpg") no-repeat top center;
+    url("../img/background.jpg") no-repeat top center;
     background-size: 100% 100%;
 }
