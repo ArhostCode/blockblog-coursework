@@ -1,0 +1,234 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 10px;
+}
+
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.header__body {
+    display: flex;
+    position: relative;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background: #02225d;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header__down__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__logo {
+    flex: 0 0 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 40px;
+    z-index: 3;
+}
+
+.header__logo img {
+    display: block;
+    max-width: 100%;
+}
+
+.header__title {
+    display: block;
+    max-width: 100%;
+    font-family: 'Joti One', serif;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.header-menu {
+}
+
+.header__slogan {
+    font-family: 'Titan One', serif;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    line-height: normal;
+    margin-top: 20%;
+}
+
+.header__start {
+    font-family: 'Titan One', serif;
+    font-weight: lighter;
+    text-align: center;
+    width: 150px;
+    color: black;
+    margin-top: 50px;
+}
+
+.header-menu__list {
+    display: flex;
+    position: relative;
+    z-index: 3;
+}
+
+.header-menu__list li {
+    list-style: none;
+    margin: 0 0 0 20px;
+}
+
+.header-menu__link {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Titan One', serif;
+    font-weight: normal;
+}
+
+.header-menu__link__account {
+    color: crimson;
+}
+
+.header__burger {
+    display: none;
+    visibility: hidden;
+}
+
+@media (max-width: 950px) {
+    .lock {
+        overflow: hidden;
+    }
+
+    .header__body {
+        height: 50px;
+        padding: 0;
+        background: transparent;
+    }
+
+    .header__logo {
+        flex: 0 0 50px;
+        height: 50px;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        z-index: 3;
+        width: 30px;
+        height: 20px;
+        visibility: visible;
+    }
+
+    .header__burger:before,
+    .header__burger:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .header__burger:before {
+        top: 0;
+    }
+
+    .header__burger:after {
+        bottom: 0;
+    }
+
+    .header__burger span {
+        position: absolute;
+        left: 0;
+        top: 9px;
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header__burger.active span {
+        transform: scale(0)
+    }
+
+    .header-menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0e112e;
+        padding: 70px 0 10px 10px;
+        overflow: auto; /*Чтобы появился скролл у меню, если оно длиннее экрана*/
+        transition: all 0.3s ease;
+    }
+
+    .header-menu.active {
+        top: 0;
+        z-index: 1;
+    }
+
+    .header-menu__list {
+        display: block;
+    }
+
+    .header-menu__list li {
+        margin: 0 0 10px 0;
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+
+}
+
+/* HEADER END */
+.content {
+    padding: 90px 0 0 0;
+}
+
+@media (max-width: 950px) {
+    .content {
+        padding: 60px 0 0 0;
+    }
+}
+
+
+@media (max-width: 760px) {
+
+    .header {
+        background-size: 300% 100%;
+    }
+}
