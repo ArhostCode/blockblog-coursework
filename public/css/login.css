@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url("imgound.jpg") no-repeat top center;
+    background: url("../img/background.jpg") no-repeat top center;
     background-size: 100% 100%;
     overflow: hidden;
 }
@@ -21,7 +21,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("public/imgimg/login.jpg") no-repeat;
+    background: url("public/img/login.jpg") no-repeat;
 }
 
 .box {
