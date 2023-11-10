@@ -1,0 +1,98 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Golos Text', serif;
+    margin-bottom: 40px;
+}
+
+.header__body {
+    background: white;
+    color: black;
+    border-radius: 0;
+}
+
+.header__title {
+    color: black;
+}
+
+.header-menu li a {
+    color: black;
+}
+
+.header__burger span {
+    background: black;
+}
+
+.header__burger::before {
+    background: black;
+}
+
+.header__burger::after {
+    background: black;
+}
+
+.active {
+    background: white;
+}
+
+.header-menu {
+    background-color: white;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content h1 {
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 280px;
+    width: 200px;
+    background-color: rgba(55, 123, 255, 0.19);
+    padding: 20px 40px;
+    border-radius: 20px;
+    margin: 20px 20px;
+}
+
+.coin-icon {
+    width: 20px;
+}
+
+.coin {
+    display: flex;
+}
+
+.coin h3 {
+    margin-left: 10px;
+}
+
+.card h4 {
+    text-align: center;
+    color: #002756;
+}
+
+.cards-layout {
+    display: flex;
+    max-width: 750px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@media all and (max-width: 500px){
+    .cards-layout {
+        flex-direction: column;
+    }
+}

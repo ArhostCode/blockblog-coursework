@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How it works</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/howitworks.css">
+    <link rel="stylesheet" href="css/sources-cards.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titan+One:300,400,600,700&amp;lang=en"/>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Golos+Text:300,400,600,700&amp;lang=en"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__logo">
+                <img src="img/icon.svg" alt="">
+            </div>
+            <p class="header__title">BlockBlog</p>
+
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <nav class="header-menu">
+                <ul class="header-menu__list">
+                    <li><a href="index.html" class="header-menu__link">Main</a></li>
+                    <li><a href="explore.html" class="header-menu__link">Explore</a></li>
+                    <li><a href="howitworks.html" class="header-menu__link">How it works</a></li>
+                    <li><a href="history.html" class="header-menu__link">History</a></li>
+                    <li><a href="crypto.html" class="header-menu__link">Crypto</a></li>
+                    <li><a href="login_page.html" class="header-menu__link header-menu__link__account">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="content">
+        <h1>Утсройство блока в блокчейне</h1>
+        <div class="block">
+            <img class="blocks-img" src="img/blocks.png">
+            <p class="content__text">
+                <span style="font-weight: bold">Блок в блокчейне</span> - это основной строительный элемент технологии,
+                в
+                котором хранится информация о
+                различных транзакциях и событиях. Он служит для группировки данных в логические единицы, которые затем
+                записываются в цепочку блоков.
+            </p>
+        </div>
+        <div class="row-3">
+            <div class="row-3-elem">
+                <h2>Заголовок блока</h2>
+                <p class="row-3-elem__text">Каждый блок имеет заголовок, который содержит метаданные и информацию о
+                    блоке.
+                    В
+                    заголовке обычно
+                    присутствуют следующие элементы</p>
+                <div class="row-2">
+                    <div class="row-2-elem">
+                        <img src="img/block-header.png">
+                    </div>
+                    <div class="row-2-elem">
+                        <ul>
+                            <li>Идентификатор блока (Hash): Уникальная цифровая подпись, создаваемая на основе
+                                содержания
+                                блока.
+                                Этот идентификатор используется для обеспечения целостности данных и связи с предыдущим
+                                блоком в
+                                цепочке.
+                            </li>
+                            <li>Метка времени (Timestamp): Дата и время, когда блок был создан.</li>
+                            <li>Номер блока (Block Number): Уникальный номер, который указывает на порядок блока в
+                                цепочке.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row-3-elem">
+                <h2>Ссылка на предыдущий блок</h2>
+                <div class="row-2">
+                    <div class="row-2-elem">
+                        <img src="img/block_reference.png">
+                    </div>
+                    <div class="row-2-elem">
+                        <p>
+                            Блокчейн представляет собой цепочку блоков, и каждый блок содержит хеш (цифровую подпись)
+                            предыдущего блока. Это создает уникальную связь и обеспечивает целостность блокчейна.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row-3-elem">
+                <h2>Содержимое блока</h2>
+                <div class="row-2">
+                    <div class="row-2-elem">
+                        <img src="img/block_content.png">
+                    </div>
+                    <div class="row-2-elem">
+                        <p>
+                            Внутри блока хранятся сами данные. В контексте криптовалют, это могут быть транзакции,
+                            включающие информацию о отправителях и получателях, суммах и других деталях. В других
+                            сферах,
+                            это могут быть различные события и записи данных.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>Полезная литература</h1>
+        <div class="sources-cards">
+            <a href="https://habr.com/ru/articles/569514/" class="card">
+                <img src="img/habr-card1.png" class="card__image" alt=""/>
+                <div class="card__overlay">
+                    <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                            <path/>
+                        </svg>
+                        <img class="card__thumb" src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/ea1/77e/10b/ea177e10bba24e7e96d66f5b7325737d.jpeg" alt=""/>
+                        <div class="card__header-text">
+                            <h3 class="card__title">Блокчейн для самых маленьких</h3>
+                            <span class="card__status">Дымков Аркадий Андреевич Программист / системный и бизнес аналитик</span>
+                        </div>
+                    </div>
+                    <p class="card__description">Блокчейн — как * в старших классах. Все говорят о нем по углам, единицы понимают, а занимается им только препод.</p>
+                </div>
+            </a>
+            <a href="https://habr.com/ru/companies/iticapital/articles/340992/" class="card">
+                <img src="img/habr-card2.jpg" class="card__image" alt=""/>
+                <div class="card__overlay">
+                    <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                            <path/>
+                        </svg>
+                        <img class="card__thumb" src="https://habrastorage.org/getpro/habr/company/001/3da/c9e/0013dac9edb9389843066ab9c378c266.png" alt=""/>
+                        <div class="card__header-text">
+                            <h3 class="card__title">Блокчейн: как он работает, и почему эта технология изменит мир</h3>
+                            <span class="card__status">ITI Capital Лучший онлайн-брокер для работы на бирже</span>
+                        </div>
+                    </div>
+                    <p class="card__description">В этой статье рассказано, какие есть подводные камни в работе технологии и почему её нельзя использовать повсеместно. </p>
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-block">
+        <div class="f-item-con">
+            <div class="app-info f-item">
+                <span class='app-name'>
+                    <span class='app-initial'>B</span>lockBlog
+                </span>
+                <p>Unlocking Tomorrow's Potential Today: Explore Blockchain Technologies</p>
+            </div>
+            <div class="c-2 f-item">
+                <div class="useful-links">
+                    <div class="footer-title">Useful Links</div>
+                    <ul>
+                        <li>Main</li>
+                        <li>How in works</li>
+                        <li>Explore</li>
+                        <li>Sign In</li>
+                        <li>About Us</li>
+                        <li>Try</li>
+                    </ul>
+                </div>
+                <div class="help-sec">
+                    <div class="footer-title">Help</div>
+                    <ul>
+                        <li>Help Me</li>
+                        <li>Feedback</li>
+                        <li>Report a Issue / Bug</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="g-i-t f-item">
+                <div class="footer-title">Get in Touch</div>
+                <div class="social-buttons">
+                    <a href="#" class="social-button social-button--facebook" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-button social-button--linkedin" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-button social-button--snapchat" aria-label="Snapchat"><i
+                            class="fab fa-snapchat-ghost"></i></a>
+                    <a href="#" class="social-button social-button--github" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="#" class="social-button social-button--codepen" aria-label="CodePen"><i
+                            class="fab fa-codepen"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='cr-con'>Copyright &copy; 2023 | Made by Ardyc BlockBlog</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" crossorigin="anonymous"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

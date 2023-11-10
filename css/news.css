@@ -1,0 +1,93 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Golos Text', serif;
+    margin-bottom: 40px;
+}
+
+.header__body {
+    background: white;
+    color: black;
+    border-radius: 0;
+}
+
+.header__title {
+    color: black;
+}
+
+.header-menu li a {
+    color: black;
+}
+
+.header__burger span {
+    background: black;
+}
+
+.header__burger::before {
+    background: black;
+}
+
+.header__burger::after {
+    background: black;
+}
+
+.active {
+    background: white;
+}
+
+.header-menu {
+    background-color: white;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.main-container .article {
+    max-width: 700px;
+    padding: 20px;
+}
+
+.article p {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 28px;
+    color: #162136;
+    text-align: justify;
+}
+
+.article h1 {
+    margin-top: 20px;
+}
+
+.main-container aside {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 220px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.article-image {
+    max-width: 500px;
+    width: 70%;
+}
+
+aside > h1 {
+    margin-bottom: 20px;
+}
