@@ -43,69 +43,7 @@
 <main>
     <div class="main-content">
         <h1>Статистика популярных криптовалют</h1>
-        <div class="cards-layout">
-            <div class="card">
-                <img class="coin-graph" src="https://www.coingecko.com/coins/1/sparkline.svg">
-                <div class="coin">
-                    <img class="coin-icon"
-                         src="https://assets.coingecko.com/coins/images/1/standard/bitcoin.png?1696501400">
-                    <h3>Bitcoin</h3>
-                </div>
-                <h4>Цена</h4>
-                <p class="coin-price">$34,988.63</p>
-                <h4>Рыночная капитализация</h4>
-                <p class="coin-price">$683,362,885,615</p>
-            </div>
-            <div class="card">
-                <img class="coin-graph" src="https://www.coingecko.com/coins/279/sparkline.svg">
-                <div class="coin">
-                    <img class="coin-icon"
-                         src="https://assets.coingecko.com/coins/images/279/standard/ethereum.png?1696501628">
-                    <h3>Ethereum</h3>
-                </div>
-                <h4>Цена</h4>
-                <p class="coin-price">$1,889.78</p>
-                <h4>Рыночная капитализация</h4>
-                <p class="coin-price">$228,058,352,111</p>
-            </div>
-            <div class="card">
-                <img class="coin-graph" src="https://www.coingecko.com/coins/1/sparkline.svg">
-                <div class="coin">
-                    <img class="coin-icon"
-                         src="https://assets.coingecko.com/coins/images/1/standard/bitcoin.png?1696501400">
-                    <h3>Bitcoin</h3>
-                </div>
-                <h4>Цена</h4>
-                <p class="coin-price">$34,988.63</p>
-                <h4>Рыночная капитализация</h4>
-                <p class="coin-price">$683,362,885,615</p>
-            </div>
-            <div class="card">
-                <img class="coin-graph" src="https://www.coingecko.com/coins/1/sparkline.svg">
-                <div class="coin">
-                    <img class="coin-icon"
-                         src="https://assets.coingecko.com/coins/images/1/standard/bitcoin.png?1696501400">
-                    <h3>Bitcoin</h3>
-                </div>
-                <h4>Цена</h4>
-                <p class="coin-price">$34,988.63</p>
-                <h4>Рыночная капитализация</h4>
-                <p class="coin-price">$683,362,885,615</p>
-            </div>
-            <div class="card">
-                <img class="coin-graph" src="https://www.coingecko.com/coins/1/sparkline.svg">
-                <div class="coin">
-                    <img class="coin-icon"
-                         src="https://assets.coingecko.com/coins/images/1/standard/bitcoin.png?1696501400">
-                    <h3>Bitcoin</h3>
-                </div>
-                <h4>Цена</h4>
-                <p class="coin-price">$34,988.63</p>
-                <h4>Рыночная капитализация</h4>
-                <p class="coin-price">$683,362,885,615</p>
-            </div>
-        </div>
-
+        <div class="cards-layout"></div>
     </div>
 </main>
 
@@ -158,8 +96,32 @@
             </div>
         </div>
     </div>
-
     <div class='cr-con'>Copyright &copy; 2023 | Made by Ardyc BlockBlog</div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" crossorigin="anonymous"></script>
+    <script src="js/crypto.js"></script>
+    <script src="js/explore.js"></script>
+    <script>
+        // Добавление карточек с криптовалютами
+        getData("BTC").then(data => {
+            $('.cards-layout')[0].appendChild(createCoinCard("Bitcoin", data[0], data[1], 'https://assets.coingecko.com/coins/images/1/standard/bitcoin.png?1696501400', 1));
+        })
+        getData("ETH").then(data => {
+            $('.cards-layout')[0].appendChild(createCoinCard("Ethereum", data[0], data[1], 'https://assets.coingecko.com/coins/images/279/standard/ethereum.png?1696501628', 279));
+        })
+        getData("USDT").then(data => {
+            $('.cards-layout')[0].appendChild(createCoinCard("Tether", data[0], data[1], 'https://assets.coingecko.com/coins/images/325/standard/Tether.png?1696501661', 325));
+        })
+        getData("BNB").then(data => {
+            $('.cards-layout')[0].appendChild(createCoinCard("BNB", data[0], data[1], 'https://assets.coingecko.com/coins/images/825/standard/bnb-icon2_2x.png?1696501970', 825));
+        })
+        getData("XRP").then(data => {
+            $('.cards-layout')[0].appendChild(createCoinCard("XRP", data[0], data[1], 'https://assets.coingecko.com/coins/images/44/standard/xrp-symbol-white-128.png?1696501442', 44));
+        })
+        getData("SOL").then(data => {
+            $('.cards-layout')[0].appendChild(createCoinCard("Solana", data[0], data[1], 'https://assets.coingecko.com/coins/images/4128/standard/solana.png?1696504756', 4128));
+        })
+    </script>
+
 </footer>
 </body>
 </html>
