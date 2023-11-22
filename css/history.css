@@ -186,9 +186,6 @@ main {
     margin-bottom: 10px;
 }
 
-@media all and (max-width: 991px) {
-}
-
 @media all and (max-width: 768px) {
     .all-timelines::before {
         right: unset;

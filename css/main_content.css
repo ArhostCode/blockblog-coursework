@@ -59,6 +59,9 @@ footer .footer-title {
 footer .useful-links li {
     color: white;
 }
+footer .useful-links li a{
+    color: white;
+}
 
 footer .help-sec li {
     color: white;

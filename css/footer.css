@@ -90,7 +90,17 @@ footer ul li {
     width: fit-content;
 }
 
+footer ul li a {
+    margin: .25rem 0;
+    cursor: pointer;
+    color: black;
+    width: fit-content;
+}
+
 footer ul li:hover {
+    color: #545454;
+}
+footer ul li a:hover {
     color: #545454;
 }
 
@@ -198,7 +208,7 @@ form .g-inp {
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
     .f-item {
         margin-top: 20px;
     }

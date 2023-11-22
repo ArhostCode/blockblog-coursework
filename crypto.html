@@ -61,12 +61,12 @@
                 <div class="useful-links">
                     <div class="footer-title">Useful Links</div>
                     <ul>
-                        <li>Main</li>
-                        <li>How in works</li>
-                        <li>Explore</li>
-                        <li>Sign In</li>
-                        <li>About Us</li>
-                        <li>Try</li>
+                        <li><a href="#">Main</a></li>
+                        <li><a href="howitworks.html">How in works</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="login_page.html">Sign In</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="crypto.html">Crypto</a></li>
                     </ul>
                 </div>
                 <div class="help-sec">
@@ -82,46 +82,43 @@
             <div class="g-i-t f-item">
                 <div class="footer-title">Get in Touch</div>
                 <div class="social-buttons">
-                    <a href="#" class="social-button social-button--facebook" aria-label="Facebook"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-button social-button--linkedin" aria-label="LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-button social-button--snapchat" aria-label="Snapchat"><i
-                            class="fab fa-snapchat-ghost"></i></a>
-                    <a href="#" class="social-button social-button--github" aria-label="GitHub"><i
+                    <a href="https://t.me/@ardyc" class="social-button social-button--telegram" aria-label="Telegram"><i
+                            class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/ArhostCode" class="social-button social-button--github" aria-label="GitHub"><i
                             class="fab fa-github"></i></a>
-                    <a href="#" class="social-button social-button--codepen" aria-label="CodePen"><i
-                            class="fab fa-codepen"></i></a>
+                    <a href="https://m.vk.com/ardycode" class="social-button social-button--vk" aria-label="VK"><i
+                            class="fab fa-vk"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class='cr-con'>Copyright &copy; 2023 | Made by Ardyc BlockBlog</div>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" crossorigin="anonymous"></script>
-    <script src="js/crypto.js"></script>
-    <script src="js/explore.js"></script>
-    <script>
-        // Добавление карточек с криптовалютами
-        getData("BTC").then(data => {
-            $('.cards-layout')[0].appendChild(createCoinCard("Bitcoin", data[0], data[1], 'https://assets.coingecko.com/coins/images/1/standard/bitcoin.png?1696501400', 1));
-        })
-        getData("ETH").then(data => {
-            $('.cards-layout')[0].appendChild(createCoinCard("Ethereum", data[0], data[1], 'https://assets.coingecko.com/coins/images/279/standard/ethereum.png?1696501628', 279));
-        })
-        getData("USDT").then(data => {
-            $('.cards-layout')[0].appendChild(createCoinCard("Tether", data[0], data[1], 'https://assets.coingecko.com/coins/images/325/standard/Tether.png?1696501661', 325));
-        })
-        getData("BNB").then(data => {
-            $('.cards-layout')[0].appendChild(createCoinCard("BNB", data[0], data[1], 'https://assets.coingecko.com/coins/images/825/standard/bnb-icon2_2x.png?1696501970', 825));
-        })
-        getData("XRP").then(data => {
-            $('.cards-layout')[0].appendChild(createCoinCard("XRP", data[0], data[1], 'https://assets.coingecko.com/coins/images/44/standard/xrp-symbol-white-128.png?1696501442', 44));
-        })
-        getData("SOL").then(data => {
-            $('.cards-layout')[0].appendChild(createCoinCard("Solana", data[0], data[1], 'https://assets.coingecko.com/coins/images/4128/standard/solana.png?1696504756', 4128));
-        })
-    </script>
 
+    <div class='cr-con'>Copyright &copy; 2023 | Made by Ardyc BlockBlog</div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" crossorigin="anonymous"></script>
+<script src="js/crypto.js"></script>
+<script src="js/explore.js"></script>
+<script>
+    // Добавление карточек с криптовалютами
+    getData("BTC").then(data => {
+        $('.cards-layout')[0].appendChild(createCoinCard("Bitcoin", data[0], data[1], 'https://assets.coingecko.com/coins/images/1/standard/bitcoin.png?1696501400', 1));
+    })
+    getData("ETH").then(data => {
+        $('.cards-layout')[0].appendChild(createCoinCard("Ethereum", data[0], data[1], 'https://assets.coingecko.com/coins/images/279/standard/ethereum.png?1696501628', 279));
+    })
+    getData("USDT").then(data => {
+        $('.cards-layout')[0].appendChild(createCoinCard("Tether", data[0], data[1], 'https://assets.coingecko.com/coins/images/325/standard/Tether.png?1696501661', 325));
+    })
+    getData("BNB").then(data => {
+        $('.cards-layout')[0].appendChild(createCoinCard("BNB", data[0], data[1], 'https://assets.coingecko.com/coins/images/825/standard/bnb-icon2_2x.png?1696501970', 825));
+    })
+    getData("XRP").then(data => {
+        $('.cards-layout')[0].appendChild(createCoinCard("XRP", data[0], data[1], 'https://assets.coingecko.com/coins/images/44/standard/xrp-symbol-white-128.png?1696501442', 44));
+    })
+    getData("SOL").then(data => {
+        $('.cards-layout')[0].appendChild(createCoinCard("Solana", data[0], data[1], 'https://assets.coingecko.com/coins/images/4128/standard/solana.png?1696504756', 4128));
+    })
+</script>
+<script src="js/menu.js"></script>
 </body>
 </html>

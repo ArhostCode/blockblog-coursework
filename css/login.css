@@ -60,7 +60,7 @@ section {
     height: 150px;
     top: 105px;
     left: -125px;
-    z-index: 2;
+    z-index: -1;
 }
 
 .box .square:nth-child(3) {
@@ -231,4 +231,18 @@ section {
     color: #fff;
     margin-bottom: 10px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 200px;
+        padding: 20px;
+        height: 200px;
+    }
+    .form .inputBx input {
+        width: 75%;
+    }
+    .form > p {
+        font-size: 0.8em;
+    }
 }

@@ -29,7 +29,7 @@
         flex-basis: 66%;
     }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
     .c-posts__item {
         flex-basis: 25%;
     }
@@ -37,7 +37,7 @@
         flex-basis: 50%;
     }
 }
-/* Other Non-Flexbox Related Styles */
+
 .c-header, .c-footer {
     background: #EDD382;
     text-align: center;
